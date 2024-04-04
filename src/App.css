@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Centre le contenu verticalement et horizontalement */
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 50vh;
+}
+
+/* Style des boutons de filtre */
+.filter-buttons button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(50, 50, 192);
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Changement de couleur au survol des boutons */
+.filter-buttons button:hover {
+  background-color: darkblue;
+}
+/* Curseur en forme de flèche sur les tâches complétées */
+.task-item.completed {
+  cursor: default;
+}
+/* css rajoutés  */
+/* App.css */
+
+/* Style du conteneur de la liste de tâches */
+.todo-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
+/* Animation pour la liste de tâches */
+.todo-list {
+  padding: 20px;
+  border: 2px solid #ccc; /* Bordure grise */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.034); /* Ombre légère */
+  animation: fadeIn 0.5s ease; /* Animation d'apparition */
+  display : flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+.filter-buttons{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 100%;
 }

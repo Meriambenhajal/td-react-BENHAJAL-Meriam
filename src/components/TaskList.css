@@ -1,0 +1,14 @@
+li{
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    
+}
+
+ul {
+    padding-left: 0;
+}
+.task-list-item.completed {
+    text-decoration: line-through;
+    
+}

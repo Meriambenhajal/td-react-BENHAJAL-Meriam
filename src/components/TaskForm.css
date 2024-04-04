@@ -1,0 +1,23 @@
+/* Style du champ de saisie */
+.task-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    width: 300px; /* Largeur fixe pour le champ de saisie */
+  }
+  .button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(50, 50, 192);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button:hover {
+    background-color: darkblue;
+  }
+  
